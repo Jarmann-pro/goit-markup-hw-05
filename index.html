@@ -52,7 +52,7 @@
             <h1 class="headline">
                 Эффективные решения для вашего бизнеса
             </h1>
-            <button type="button">
+            <button type="button" data-modal-open>
                 Заказать услугу
             </button>
         </div>
@@ -432,6 +432,16 @@
             </div>
       </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+      <div class="bg_modal_screen">
+        <div class="modal">
+          <button type="button" class="modal-close" data-modal-close> 
+            X
+          </button>
+        </div>
+      </div>
+    </div>
+  <script src="./js/modal.js"></script>
+</body>
 </body>
 </html>

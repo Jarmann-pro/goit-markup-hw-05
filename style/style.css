@@ -42,6 +42,7 @@ img {
 
 /* переменные цветов */
 :root {
+  --primary-white-color: #fff;
   --color-text: #212121;
   --color-title-headline: #212121; 
   --color-button-hover: #2196F3;

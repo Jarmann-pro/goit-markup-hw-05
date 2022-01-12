@@ -1,0 +1,58 @@
+/* шапка */
+header {
+    background: #fff;
+    position: sticky;
+    border-bottom: 1px solid #ECECEC;
+    height: 80px;
+    top: 0;
+}
+header div {
+    background: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/* logo */
+.logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: .4s;
+}
+.logo span {
+    transition: .4s;
+    color: var(--color-button-hover);
+}
+.logo:hover, .logo:active {
+    transition: .4s;
+    color: var(--color-button-hover);
+}
+.logo:hover span, .logo:active span {
+    color: var(--color-text);
+    transition: .4s;
+}
+/* nav */
+nav ul {
+    margin-left: 93px;
+    display: flex;
+}
+nav li:nth-child(2n) {
+    margin: 0 50px;
+}
+/* contact */
+.contact_header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 2px;
+}
+.contact_header a {
+    color: #757575;
+}
+.contact_header a:first-child {
+    margin-right: 50px;    
+}

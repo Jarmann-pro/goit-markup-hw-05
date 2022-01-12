@@ -1,0 +1,124 @@
+/* Обнуление стилей, часто используемые стили */
+/* Указываем box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+/* Убираем внутренние отступы */
+ul[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body, h1, h2, h3, h4, p, ul[class], li {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  font-family: roboto;
+  font-style: normal;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul */
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* _____________ */
+
+/* переменные цветов */
+:root {
+  --color-text: #212121;
+  --color-title-headline: #212121; 
+  --color-button-hover: #2196F3;
+  --color-contact: rgba(255, 255, 255, 0.6);;
+  --color-desc: #757575; /* card description */
+  --color-footer-link: #fff;
+  --secondary-background-color: #f5f4fa;
+}
+
+/* часто используемые стили */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* стили ссылки | link style */
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.16;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: .4s;
+}
+.footer_link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--color-footer-link);
+}
+/* ссылка при наведении | link hover */
+.link:hover {
+  color: var(--color-button-hover);
+  transition: .4s;
+}
+/* стили заголовка | headline style */
+.headline {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--color-title-headline);
+}
+
+/* button */
+
+button{
+  background: var(--color-button-hover);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  padding: 10px 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 0;
+  transition: .8s;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: 0;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  transition: .8s;
+  background: #69bcff;
+}
+button:active {
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: .15s;
+  background: #69ff9b;
+}

@@ -42,6 +42,13 @@ img {
 
 /* переменные цветов */
 :root {
+  --logo-color: #000000;
+  --primary-white-color: #ffffff;
+  --title-color: #212121;
+  --primary-text-color: #757575;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --secondary-background-color: #f5f4fa;
   --primary-white-color: #fff;
   --color-text: #212121;
   --color-title-headline: #212121; 
@@ -122,4 +129,16 @@ button:active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: .15s;
   background: #69ff9b;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
